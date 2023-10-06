@@ -3,6 +3,7 @@ About r-mrfdepth-feedstock
 
 Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/r-mrfdepth-feedstock/blob/main/LICENSE.txt)
 
+
 About r-mrfdepth
 ----------------
 
@@ -11,6 +12,7 @@ Home: https://github.com/PSegaert/mrfDepth
 Package license: GPL-2.0-or-later
 
 Summary: Tools to compute depth measures and implementations of related tasks such as outlier detection, data exploration and classification of multivariate, regression and functional data.
+
 About r-mrfdepth
 ----------------
 
