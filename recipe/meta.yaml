@@ -1,4 +1,4 @@
-{% set version = "1.0.15" %}
+{% set version = "1.0.16" %}
 {% set posix = 'm2-' if win else '' %}
 {% set native = 'm2w64-' if win else '' %}
 
@@ -10,7 +10,7 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/mrfDepth_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/mrfDepth/mrfDepth_{{ version }}.tar.gz
-  sha256: 54e330ba6624127e1566c0ceeb6cc0d4e9c363a3bc62e7cbfa615f3d702fac21
+  sha256: 120e5d6b6dbc32b3ce6e78d5e7f61307025fcc2d40c14f2c01f39f926c44b8f7
 
 build:
   merge_build_host: true  # [win]
