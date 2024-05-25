@@ -1,4 +1,4 @@
-{% set version = "1.0.16" %}
+{% set version = "1.0.17" %}
 {% set posix = 'm2-' if win else '' %}
 {% set native = 'm2w64-' if win else '' %}
 
@@ -10,7 +10,7 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/mrfDepth_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/mrfDepth/mrfDepth_{{ version }}.tar.gz
-  sha256: 120e5d6b6dbc32b3ce6e78d5e7f61307025fcc2d40c14f2c01f39f926c44b8f7
+  sha256: ac024e4bda58339e68d3060c6536c072a079e8f2948b12af3aad0d9fe5bf6716
 
 build:
   merge_build_host: true  # [win]
@@ -22,7 +22,9 @@ build:
 requirements:
   build:
     - {{ compiler('c') }}              # [not win]
+    - {{ stdlib("c") }}                # [not win]
     - {{ compiler('m2w64_c') }}        # [win]
+    - {{ stdlib("m2w64_c") }}          # [win]
     - {{ compiler('cxx') }}            # [not win]
     - {{ compiler('m2w64_cxx') }}      # [win]
     - {{ compiler('fortran') }}        # [not win]
